@@ -1,10 +1,11 @@
 package com.example.projectsharedpref
 
 import androidx.room.Database
+import androidx.room.RoomDatabase
 
 
 @Database (entities = [MyEntity::class],version = 1 )
- abstract class MyDatabase {
+ abstract class MyDatabase : RoomDatabase() {
 
      abstract fun mydaofunction() : MyDAO
 }
