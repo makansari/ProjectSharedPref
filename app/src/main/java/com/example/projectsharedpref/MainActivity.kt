@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
                 editor.remove("keyusername").commit()
             }
 
+
+            textViewResult.setText(username)
+
             editTextUsername.setText("")
 
         }
